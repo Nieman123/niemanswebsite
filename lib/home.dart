@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:foil/foil.dart';
+import 'package:niemanswebsite/avita.dart';
 import 'package:niemanswebsite/introduction.dart';
+
+import 'about.dart';
+import 'gd_project.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -18,7 +22,7 @@ class _HomePageState extends State<HomePage> {
       Future.microtask(() {
         SystemChrome.setApplicationSwitcherDescription(
             ApplicationSwitcherDescription(
-          label: 'Pluto - Private Underground Events in Asheville, NC',
+          label: "Nieman's Website",
           primaryColor: Colors.black.value,
         ));
       });
@@ -77,6 +81,11 @@ class _HomePageState extends State<HomePage> {
                               'Senior Software Engineer & Architect | XR & Multiverse Specialist | Cross-Platform Development Leader',
                           textScaleFactor: 1.5),
                     ),
+                    About(fontSize: 15),
+                    GDProject(
+                      fontSize: 15,
+                    ),
+                    Avita(fontSize: 15)
                   ],
                 ),
               ),
@@ -127,6 +136,15 @@ class _HomePageState extends State<HomePage> {
                               word:
                                   'Senior Software Engineer & Architect | XR & Multiverse Specialist | Cross-Platform Development Leader',
                               textScaleFactor: 1.5),
+                          About(fontSize: 15),
+                          Row(
+                            children: [
+                              GDProject(
+                                fontSize: 15,
+                              ),
+                              Avita(fontSize: 15),
+                            ],
+                          )
                         ],
                       ),
                     ),

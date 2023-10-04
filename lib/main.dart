@@ -1,16 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_list_view/flutter_list_view.dart';
+import 'package:niemanswebsite/underconstruction.dart';
 import 'package:sa3_liquid/liquid/plasma/plasma.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 import 'home.dart';
 import 'custom_theme.dart';
 
-void main() {
+final FirebaseAnalytics analytics = FirebaseAnalytics.instance;
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
+  static FirebaseAnalytics analytics = FirebaseAnalytics.instance;
+  static FirebaseAnalyticsObserver observer =
+      FirebaseAnalyticsObserver(analytics: analytics);
 
   // This widget is the root of your application.
   @override
@@ -20,6 +34,7 @@ class MyApp extends StatelessWidget {
       theme: CustomTheme.darkTheme,
       darkTheme: CustomTheme.darkTheme,
       home: const MyHomePage(title: "Welcome to Nieman's Website"),
+      navigatorObservers: <NavigatorObserver>[observer],
     );
   }
 }
@@ -34,7 +49,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Widget> widgetList = [const HomePage()];
+  List<Widget> widgetList = [
+    const UnderConstruction(),
+    const HomePage(),
+  ];
 
   @override
   Widget build(BuildContext context) {
