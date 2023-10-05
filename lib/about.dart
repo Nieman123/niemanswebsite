@@ -8,7 +8,7 @@ class About extends StatelessWidget {
 
   final double fontSize;
   final String gotAbout = """
-        With a dynamic career that spans across various domains, from XR development in both Unity and Unreal Engine, to web development and leading projects that intersect cutting-edge technology with practical applications, I've developed a holistic perspective on software engineering. My portfolio showcases projects that have pushed the boundaries of what's possible in virtual reality, AR, and more traditional software spaces, but what it doesn't convey is the passion, dedication, and deep-rooted curiosity that drives every line of code I write.
+        With a dynamic career that spans across various domains, from XR development in both Unity and Unreal Engine, to web development and leading projects that intersect cutting-edge technology with practical applications, I've developed a holistic perspective on software engineering. My portfolio showcases projects that have pushed the boundaries of what's possible in virtual reality, AR, and more traditional software spaces.
 
         At the heart of my work is a desire to bridge the gap between technology and user experience. Whether it's creating a medical training application with unprecedented realism or developing a multiplatform installer that simplifies intricate processes, I thrive on challenges that demand both technical prowess and a deep understanding of user needs.
 

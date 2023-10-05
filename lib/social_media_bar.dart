@@ -5,7 +5,8 @@ import '../html_open_link.dart';
 class SocialMediaBar extends StatelessWidget {
   SocialMediaBar({Key? key, required this.height}) : super(key: key);
   final List<List<String>> data = [
-    ['mailto:contact@pluto.events', 'email']
+    ['nieman123@gmail.com', 'email'],
+    ['https://github.com/Nieman123', 'github']
   ];
   final double height;
 
@@ -15,6 +16,7 @@ class SocialMediaBar extends StatelessWidget {
       'email',
       'facebook',
       'instagram',
+      'github'
     ];
     return Padding(
         padding: EdgeInsets.only(top: height * 0.03),

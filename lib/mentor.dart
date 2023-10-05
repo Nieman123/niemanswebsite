@@ -37,9 +37,10 @@ class Mentor extends StatelessWidget {
                 ),
                 const SizedBox(height: 10.0),
                 Text(
-                  """As a dedicated team mentor, I strive to fosted an environment enriched with knowledge-sharing and collaboration. Drawing from my expertise, I guided team members on the nuances of creating multiplayer experience. 
+                  """
+As a dedicated team mentor, I strive to fosted an environment enriched with knowledge-sharing and collaboration. Drawing from my expertise, I guided team members on the nuances of creating multiplayer experience. 
                   
-                  Emphasizing cross-platform functionality, I ensured that our projects seamlessly catered to diverse user bases. Additionally, my proficiency in CI/CD and GitHub Actions was instrumental in streamlining development processes, bolstering team growth, and instilling industry-leading best practices.""",
+Emphasizing cross-platform functionality, I ensured that our projects seamlessly catered to diverse user bases. Additionally, my proficiency in CI/CD and GitHub Actions was instrumental in streamlining development processes, bolstering team growth, and instilling industry-leading best practices.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
