@@ -35,13 +35,10 @@ dependencies:
   sa3_liquid: ^1.0.1
   flutter_list_view: ^1.1.21
   video_player: any
-
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   firebase_analytics: ^10.5.1
   firebase_core: ^2.17.0
+  path_provider: ^2.0.2 
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +65,9 @@ flutter:
   assets:
     - assets/galaxy_donutz_promo.gif
     - assets/recell-device.png
+    - assets/bldr.gif
+    - assets/Jonathan-Nieman-Resume-10-2-2023.pdf
+    - assets/home/constant/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

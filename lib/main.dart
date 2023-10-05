@@ -65,8 +65,8 @@ class _MyHomePageState extends State<MyHomePage> {
           body: Stack(children: [
             const PlasmaRenderer(
               type: PlasmaType.infinity,
-              particles: 15,
-              color: Color.fromARGB(29, 165, 0, 143),
+              particles: 30,
+              color: Color.fromARGB(29, 95, 95, 95),
               blur: 0.5,
               size: 1,
               speed: 0.5,
@@ -90,8 +90,8 @@ class _MyHomePageState extends State<MyHomePage> {
           body: Stack(children: [
             const PlasmaRenderer(
               type: PlasmaType.infinity,
-              particles: 15,
-              color: Color.fromARGB(29, 165, 0, 143),
+              particles: 30,
+              color: Color.fromARGB(29, 95, 95, 95),
               blur: 0.5,
               size: 1,
               speed: 0.5,

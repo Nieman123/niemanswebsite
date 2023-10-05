@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
-import 'gd.dart';
 
-class Avita extends StatelessWidget {
-  Avita({
-    Key? key,
-    required this.fontSize,
-    required this.isMobile,
-  }) : super(key: key);
+class Multiverse extends StatelessWidget {
+  Multiverse({Key? key, required this.fontSize, required this.isMobile})
+      : super(key: key);
 
-  final bool isMobile;
   final double fontSize;
+  final bool isMobile;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +24,7 @@ class Avita extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  "Pioneering Advanced Surgical Simulations for Avita",
+                  "Crafting an Inclusive Multiverse: From UE4 to Unity & WebGL",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -36,15 +32,14 @@ class Avita extends StatelessWidget {
                       fontSize: fontSize * 1.5),
                 ),
                 const SizedBox(height: 10.0),
-                Image.asset('assets/recell-device.png'), // Add spacing
+                Image.asset('assets/bldr.gif'), // Add spacing
                 const SizedBox(height: 10.0),
                 Text(
-                  """
-Collaborated closely with Avita, a frontrunner in regenerative medicine, to spearhead a transformative medical training simulation project. 
-
-Leading a proficient development team, we employed Unreal Engine technology to craft tailored training solutions, primarily for Avita's exclusive product, ReCell. Our innovations included pioneering intuitive interaction techniques for essential medical instruments like syringes and scalpels, especially on the Quest 2 platform. 
-
-This enhanced the authenticity and tactile feedback of surgical preparation simulations, particularly for burn victim procedures. Our commitment to high fidelity and precision played a pivotal role in advancing the training modules for surgical technicians, ensuring they could adeptly navigate Avita's unique enzymatic process.""",
+                  """Showcased exemplary leadership by steering a transition from UE4 to Unity, coupled with WebGL, to usher in enhanced features to the multiverse platform. 
+                  
+This shift was complemented by the introduction of a user-centric world-building interface, allowing users to craft distinctive rooms or scenes with ease. Furthermore, the collaboration with a dedicated Unity team led to the birth of a harmonized frontend builder and player applications. 
+                  
+The backended was built with a GraphQL API and database system put in place for efficient asset management and world submissions.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -71,7 +66,7 @@ This enhanced the authenticity and tactile feedback of surgical preparation simu
             child: Column(
               children: [
                 Text(
-                  "Pioneering Advanced Surgical Simulations for Avita",
+                  "Crafting an Inclusive Multiverse: From UE4 to Unity & WebGL",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -79,15 +74,14 @@ This enhanced the authenticity and tactile feedback of surgical preparation simu
                       fontSize: fontSize * 1.5),
                 ),
                 const SizedBox(height: 10.0),
-                Image.asset('assets/recell-device.png'), // Add spacing
+                Image.asset('assets/bldr.gif'), // Add spacing
                 const SizedBox(height: 10.0),
                 Text(
-                  """
-Collaborated closely with Avita, a frontrunner in regenerative medicine, to spearhead a transformative medical training simulation project. 
-
-Leading a proficient development team, we employed Unreal Engine technology to craft tailored training solutions, primarily for Avita's exclusive product, ReCell. Our innovations included pioneering intuitive interaction techniques for essential medical instruments like syringes and scalpels, especially on the Quest 2 platform. 
-
-This enhanced the authenticity and tactile feedback of surgical preparation simulations, particularly for burn victim procedures. Our commitment to high fidelity and precision played a pivotal role in advancing the training modules for surgical technicians, ensuring they could adeptly navigate Avita's unique enzymatic process.""",
+                  """Showcased exemplary leadership by steering a transition from UE4 to Unity, coupled with WebGL, to usher in enhanced features to the multiverse platform. 
+                  
+This shift was complemented by the introduction of a user-centric world-building interface, allowing users to craft distinctive rooms or scenes with ease. Furthermore, the collaboration with a dedicated Unity team led to the birth of a harmonized frontend builder and player applications. 
+                  
+The backended was built with a GraphQL API and database system put in place for efficient asset management and world submissions.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,

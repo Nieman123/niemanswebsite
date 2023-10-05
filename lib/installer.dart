@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'gd.dart';
 
-class Avita extends StatelessWidget {
-  Avita({
+class Installer extends StatelessWidget {
+  Installer({
     Key? key,
     required this.fontSize,
     required this.isMobile,
@@ -28,7 +28,7 @@ class Avita extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  "Pioneering Advanced Surgical Simulations for Avita",
+                  "Multiplatform Installation",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -36,15 +36,13 @@ class Avita extends StatelessWidget {
                       fontSize: fontSize * 1.5),
                 ),
                 const SizedBox(height: 10.0),
-                Image.asset('assets/recell-device.png'), // Add spacing
-                const SizedBox(height: 10.0),
                 Text(
                   """
-Collaborated closely with Avita, a frontrunner in regenerative medicine, to spearhead a transformative medical training simulation project. 
+Pioneered the development of a versatile installer utilizing Dart and Flutter, offering hassle-free installation and updates for Mac and Windows desktop multiverse experiences. 
 
-Leading a proficient development team, we employed Unreal Engine technology to craft tailored training solutions, primarily for Avita's exclusive product, ReCell. Our innovations included pioneering intuitive interaction techniques for essential medical instruments like syringes and scalpels, especially on the Quest 2 platform. 
+This not only heightened the user experience but also escalated system efficiency. 
 
-This enhanced the authenticity and tactile feedback of surgical preparation simulations, particularly for burn victim procedures. Our commitment to high fidelity and precision played a pivotal role in advancing the training modules for surgical technicians, ensuring they could adeptly navigate Avita's unique enzymatic process.""",
+Additionally, a notable achievement was the successful porting of the UE4 multiverse experience to MacOS, which ushered in the platform to an expanded audience.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -71,7 +69,7 @@ This enhanced the authenticity and tactile feedback of surgical preparation simu
             child: Column(
               children: [
                 Text(
-                  "Pioneering Advanced Surgical Simulations for Avita",
+                  "Multiplatform Installation",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -79,15 +77,13 @@ This enhanced the authenticity and tactile feedback of surgical preparation simu
                       fontSize: fontSize * 1.5),
                 ),
                 const SizedBox(height: 10.0),
-                Image.asset('assets/recell-device.png'), // Add spacing
-                const SizedBox(height: 10.0),
                 Text(
                   """
-Collaborated closely with Avita, a frontrunner in regenerative medicine, to spearhead a transformative medical training simulation project. 
+Pioneered the development of a versatile installer utilizing Dart and Flutter, offering hassle-free installation and updates for Mac and Windows desktop multiverse experiences. 
 
-Leading a proficient development team, we employed Unreal Engine technology to craft tailored training solutions, primarily for Avita's exclusive product, ReCell. Our innovations included pioneering intuitive interaction techniques for essential medical instruments like syringes and scalpels, especially on the Quest 2 platform. 
+This not only heightened the user experience but also escalated system efficiency. 
 
-This enhanced the authenticity and tactile feedback of surgical preparation simulations, particularly for burn victim procedures. Our commitment to high fidelity and precision played a pivotal role in advancing the training modules for surgical technicians, ensuring they could adeptly navigate Avita's unique enzymatic process.""",
+Additionally, a notable achievement was the successful porting of the UE4 multiverse experience to MacOS, which ushered in the platform to an expanded audience.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,

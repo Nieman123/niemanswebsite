@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:foil/foil.dart';
 import 'package:niemanswebsite/avita.dart';
+import 'package:niemanswebsite/contact_me.dart';
+import 'package:niemanswebsite/installer.dart';
 import 'package:niemanswebsite/introduction.dart';
+import 'package:niemanswebsite/multiverse.dart';
+import 'package:niemanswebsite/resumedownload.dart';
+import 'package:niemanswebsite/teams.dart';
 
 import 'about.dart';
 import 'gd_project.dart';
+import 'mentor.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -60,10 +66,10 @@ class _HomePageState extends State<HomePage> {
                             colors: List.from(Foils.linearRainbow.colors)),
                         opacity: 0.6,
                         scalar: Scalar.identity,
-                        speed: const Duration(milliseconds: 100000),
+                        speed: const Duration(seconds: 200),
                         duration: const Duration(milliseconds: 100000),
                         child: const Text(
-                          "Nieman",
+                          "Nieman's Website",
                           textScaleFactor: 4.5,
                           style: TextStyle(
                             fontFamily: 'FjallaOne',
@@ -81,74 +87,135 @@ class _HomePageState extends State<HomePage> {
                               'Senior Software Engineer & Architect | XR & Multiverse Specialist | Cross-Platform Development Leader',
                           textScaleFactor: 1.5),
                     ),
+                    const SizedBox(
+                      height: 10.0,
+                    ),
+                    Center(child: ResumeDownloadButton()),
                     About(fontSize: 15),
                     GDProject(
                       fontSize: 15,
+                      isMobile: true,
                     ),
-                    Avita(fontSize: 15)
+                    Avita(
+                      fontSize: 15,
+                      isMobile: true,
+                    ),
+                    Multiverse(
+                      fontSize: 15,
+                      isMobile: true,
+                    ),
+                    Installer(fontSize: 15, isMobile: true),
+                    Mentor(fontSize: 15, isMobile: true),
+                    Teams(fontSize: 15, isMobile: true),
+                    const ContactMe()
                   ],
                 ),
               ),
             );
           } else {
-            return Padding(
-              padding: EdgeInsets.symmetric(horizontal: width * 0.024),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: const Color.fromARGB(
-                      50, 0, 0, 0), // Set the background color to black
-                  borderRadius: BorderRadius.circular(
-                      8.0), // Set the border radius for rounded corners
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: width * 0.032),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Roll(
-                            crinkle: Crinkle.twinkling,
-                            child: Foil(
-                              gradient: Foils.linearRainbow.copyWith(
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
-                                  colors:
-                                      List.from(Foils.linearRainbow.colors)),
-                              opacity: 0.6,
-                              scalar: Scalar.identity,
-                              speed: const Duration(seconds: 100),
-                              duration: const Duration(seconds: 100),
-                              child: const Text(
-                                "Nieman",
-                                textScaleFactor: 4.5,
-                                style: TextStyle(
-                                  fontFamily: 'FjallaOne',
-                                  // letterSpacing: 10.5,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.white,
-                                ),
+            return SingleChildScrollView(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: width * 0.024),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(
+                        50, 0, 0, 0), // Set the background color to black
+                    borderRadius: BorderRadius.circular(
+                        8.0), // Set the border radius for rounded corners
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: width * 0.032),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Roll(
+                          crinkle: Crinkle.twinkling,
+                          child: Foil(
+                            gradient: Foils.linearRainbow.copyWith(
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight,
+                                colors: List.from(Foils.linearRainbow.colors)),
+                            opacity: 0.6,
+                            scalar: Scalar.identity,
+                            speed: const Duration(seconds: 200),
+                            duration: const Duration(seconds: 100),
+                            child: const Text(
+                              "Nieman's Website",
+                              textScaleFactor: 4.5,
+                              style: TextStyle(
+                                fontFamily: 'FjallaOne',
+                                // letterSpacing: 10.5,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white,
                               ),
                             ),
                           ),
-                          const Introduction(
-                              word:
-                                  'Senior Software Engineer & Architect | XR & Multiverse Specialist | Cross-Platform Development Leader',
-                              textScaleFactor: 1.5),
-                          About(fontSize: 15),
-                          Row(
-                            children: [
-                              GDProject(
+                        ),
+                        const Introduction(
+                            word:
+                                'Senior Software Engineer & Architect | XR & Multiverse Specialist | Cross-Platform Development Leader',
+                            textScaleFactor: 1.5),
+                        const SizedBox(
+                          height: 15.0,
+                        ),
+                        Center(child: ResumeDownloadButton()),
+                        About(fontSize: 15),
+                        Flex(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          direction: Axis.horizontal,
+                          children: [
+                            Expanded(
+                              child: GDProject(
                                 fontSize: 15,
+                                isMobile: false,
                               ),
-                              Avita(fontSize: 15),
-                            ],
-                          )
-                        ],
-                      ),
+                            ),
+                            Expanded(
+                                child: Avita(
+                              fontSize: 15,
+                              isMobile: false,
+                            )),
+                          ],
+                        ),
+                        Flex(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          direction: Axis.horizontal,
+                          children: [
+                            Expanded(
+                              child: Multiverse(
+                                fontSize: 15,
+                                isMobile: false,
+                              ),
+                            ),
+                            Expanded(
+                                child: Installer(
+                              fontSize: 15,
+                              isMobile: false,
+                            )),
+                          ],
+                        ),
+                        Flex(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          direction: Axis.horizontal,
+                          children: [
+                            Expanded(
+                              child: Mentor(
+                                fontSize: 15,
+                                isMobile: false,
+                              ),
+                            ),
+                            Expanded(
+                                child: Teams(
+                              fontSize: 15,
+                              isMobile: false,
+                            )),
+                          ],
+                        ),
+                        const ContactMe()
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               ),
             );

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'gd.dart';
 
-class Avita extends StatelessWidget {
-  Avita({
+class Mentor extends StatelessWidget {
+  Mentor({
     Key? key,
     required this.fontSize,
     required this.isMobile,
@@ -28,7 +28,7 @@ class Avita extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  "Pioneering Advanced Surgical Simulations for Avita",
+                  "Leading with Knowledge: Coaching for Cross-Platform Success",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -36,15 +36,10 @@ class Avita extends StatelessWidget {
                       fontSize: fontSize * 1.5),
                 ),
                 const SizedBox(height: 10.0),
-                Image.asset('assets/recell-device.png'), // Add spacing
-                const SizedBox(height: 10.0),
                 Text(
-                  """
-Collaborated closely with Avita, a frontrunner in regenerative medicine, to spearhead a transformative medical training simulation project. 
-
-Leading a proficient development team, we employed Unreal Engine technology to craft tailored training solutions, primarily for Avita's exclusive product, ReCell. Our innovations included pioneering intuitive interaction techniques for essential medical instruments like syringes and scalpels, especially on the Quest 2 platform. 
-
-This enhanced the authenticity and tactile feedback of surgical preparation simulations, particularly for burn victim procedures. Our commitment to high fidelity and precision played a pivotal role in advancing the training modules for surgical technicians, ensuring they could adeptly navigate Avita's unique enzymatic process.""",
+                  """As a dedicated team mentor, I strive to fosted an environment enriched with knowledge-sharing and collaboration. Drawing from my expertise, I guided team members on the nuances of creating multiplayer experience. 
+                  
+                  Emphasizing cross-platform functionality, I ensured that our projects seamlessly catered to diverse user bases. Additionally, my proficiency in CI/CD and GitHub Actions was instrumental in streamlining development processes, bolstering team growth, and instilling industry-leading best practices.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -71,7 +66,7 @@ This enhanced the authenticity and tactile feedback of surgical preparation simu
             child: Column(
               children: [
                 Text(
-                  "Pioneering Advanced Surgical Simulations for Avita",
+                  "Leading with Knowledge: Coaching for Cross-Platform Success",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -79,15 +74,11 @@ This enhanced the authenticity and tactile feedback of surgical preparation simu
                       fontSize: fontSize * 1.5),
                 ),
                 const SizedBox(height: 10.0),
-                Image.asset('assets/recell-device.png'), // Add spacing
-                const SizedBox(height: 10.0),
                 Text(
                   """
-Collaborated closely with Avita, a frontrunner in regenerative medicine, to spearhead a transformative medical training simulation project. 
-
-Leading a proficient development team, we employed Unreal Engine technology to craft tailored training solutions, primarily for Avita's exclusive product, ReCell. Our innovations included pioneering intuitive interaction techniques for essential medical instruments like syringes and scalpels, especially on the Quest 2 platform. 
-
-This enhanced the authenticity and tactile feedback of surgical preparation simulations, particularly for burn victim procedures. Our commitment to high fidelity and precision played a pivotal role in advancing the training modules for surgical technicians, ensuring they could adeptly navigate Avita's unique enzymatic process.""",
+As a dedicated team mentor, I strive to fosted an environment enriched with knowledge-sharing and collaboration. Drawing from my expertise, I guided team members on the nuances of creating multiplayer experience. 
+                  
+Emphasizing cross-platform functionality, I ensured that our projects seamlessly catered to diverse user bases. Additionally, my proficiency in CI/CD and GitHub Actions was instrumental in streamlining development processes, bolstering team growth, and instilling industry-leading best practices.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,

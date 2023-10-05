@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'gd.dart';
 
-class Avita extends StatelessWidget {
-  Avita({
+class Teams extends StatelessWidget {
+  Teams({
     Key? key,
     required this.fontSize,
     required this.isMobile,
@@ -28,7 +28,7 @@ class Avita extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  "Pioneering Advanced Surgical Simulations for Avita",
+                  "Leading with Knowledge: Coaching for Cross-Platform Success",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -36,15 +36,12 @@ class Avita extends StatelessWidget {
                       fontSize: fontSize * 1.5),
                 ),
                 const SizedBox(height: 10.0),
-                Image.asset('assets/recell-device.png'), // Add spacing
-                const SizedBox(height: 10.0),
                 Text(
-                  """
-Collaborated closely with Avita, a frontrunner in regenerative medicine, to spearhead a transformative medical training simulation project. 
+                  """As a seasoned development leader, I have consistently steered teams to success across a multitude of platforms and technologies. My leadership journey has spanned directing a multiplatform installer's creation using Dart and Flutter to pioneering immersive WebGL experiences for high-profile clients like L'Oréal Makeup Group. 
+                  
+My adeptness in fostering collaboration has been particularly evident in projects such as the transition from UE4 to Unity and WebGL, where I showcased adaptability and vision. Whether it's optimizing environments for broader user accessibility or innovatively leveraging GraphQL APIs for robust backend functionalities, I've always empowered my teams to push boundaries. 
 
-Leading a proficient development team, we employed Unreal Engine technology to craft tailored training solutions, primarily for Avita's exclusive product, ReCell. Our innovations included pioneering intuitive interaction techniques for essential medical instruments like syringes and scalpels, especially on the Quest 2 platform. 
-
-This enhanced the authenticity and tactile feedback of surgical preparation simulations, particularly for burn victim procedures. Our commitment to high fidelity and precision played a pivotal role in advancing the training modules for surgical technicians, ensuring they could adeptly navigate Avita's unique enzymatic process.""",
+My approach blends technical acumen with a collaborative spirit, ensuring that every team member is aligned, inspired, and geared towards project completion, innovation, and excellence.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -71,7 +68,7 @@ This enhanced the authenticity and tactile feedback of surgical preparation simu
             child: Column(
               children: [
                 Text(
-                  "Pioneering Advanced Surgical Simulations for Avita",
+                  "Leading Development Visions to Reality",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -79,15 +76,12 @@ This enhanced the authenticity and tactile feedback of surgical preparation simu
                       fontSize: fontSize * 1.5),
                 ),
                 const SizedBox(height: 10.0),
-                Image.asset('assets/recell-device.png'), // Add spacing
-                const SizedBox(height: 10.0),
                 Text(
-                  """
-Collaborated closely with Avita, a frontrunner in regenerative medicine, to spearhead a transformative medical training simulation project. 
+                  """As a seasoned development leader, I have consistently steered teams to success across a multitude of platforms and technologies. My leadership journey has spanned directing a multiplatform installer's creation using Dart and Flutter to pioneering immersive WebGL experiences for high-profile clients like L'Oréal Makeup Group. 
+                  
+My adeptness in fostering collaboration has been particularly evident in projects such as the transition from UE4 to Unity and WebGL, where I showcased adaptability and vision. Whether it's optimizing environments for broader user accessibility or innovatively leveraging GraphQL APIs for robust backend functionalities, I've always empowered my teams to push boundaries. 
 
-Leading a proficient development team, we employed Unreal Engine technology to craft tailored training solutions, primarily for Avita's exclusive product, ReCell. Our innovations included pioneering intuitive interaction techniques for essential medical instruments like syringes and scalpels, especially on the Quest 2 platform. 
-
-This enhanced the authenticity and tactile feedback of surgical preparation simulations, particularly for burn victim procedures. Our commitment to high fidelity and precision played a pivotal role in advancing the training modules for surgical technicians, ensuring they could adeptly navigate Avita's unique enzymatic process.""",
+My approach blends technical acumen with a collaborative spirit, ensuring that every team member is aligned, inspired, and geared towards project completion, innovation, and excellence.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
