@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:foil/foil.dart';
@@ -97,6 +98,62 @@ class _HomePageState extends State<HomePage> {
                         child: Center(child: ResumeDownloadButton()),
                       ),
                       About(fontSize: 15),
+                      Center(
+                        child: CarouselSlider(
+                          options: CarouselOptions(
+                            autoPlay: true,
+                            aspectRatio: 2.0,
+                            enlargeCenterPage: true,
+                          ),
+                          items: [
+                            ['assets/gallery/1.png', 'Nieman and Minnie'],
+                            ['assets/gallery/3.jpg', 'On the bike :)'],
+                            ['assets/gallery/4.jpg', 'The Weekends'],
+                            [
+                              'assets/gallery/5.jpg',
+                              'On the Tail of the Dragon'
+                            ],
+                            ['assets/gallery/6.jpg', 'With my friend Ronie'],
+                          ].map((i) {
+                            return Builder(
+                              builder: (BuildContext context) {
+                                return Stack(
+                                  children: [
+                                    Container(
+                                        width:
+                                            MediaQuery.of(context).size.width,
+                                        margin: const EdgeInsets.symmetric(
+                                            horizontal: 5.0),
+                                        decoration: BoxDecoration(
+                                          color: Colors.amber,
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                        ),
+                                        child: Image.asset(i[0],
+                                            fit: BoxFit.cover)),
+                                    Align(
+                                      alignment: const Alignment(
+                                          0.0, 0.9), // Bottom center
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Text(
+                                          i[1],
+                                          style: const TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w100,
+                                            backgroundColor: Colors.black54,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                );
+                              },
+                            );
+                          }).toList(),
+                        ),
+                      ),
                       Padding(
                         padding: EdgeInsets.all(height * 0.04),
                         child: Center(
@@ -159,37 +216,122 @@ class _HomePageState extends State<HomePage> {
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(
-                          padding: EdgeInsets.all(height * 0.04),
-                          child: Roll(
-                            crinkle: Crinkle.twinkling,
-                            child: Foil(
-                              gradient: Foils.linearRainbow.copyWith(
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
-                                  colors:
-                                      List.from(Foils.linearRainbow.colors)),
-                              opacity: 0.6,
-                              scalar: Scalar.identity,
-                              speed: const Duration(seconds: 200),
-                              duration: const Duration(seconds: 100),
-                              child: const Text(
-                                "Nieman's Website",
-                                textScaleFactor: 4.5,
-                                style: TextStyle(
-                                  fontFamily: 'FjallaOne',
-                                  // letterSpacing: 10.5,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.white,
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: width * 0.032),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.all(height * 0.04),
+                                      child: Roll(
+                                        crinkle: Crinkle.twinkling,
+                                        child: Foil(
+                                          gradient: Foils.linearRainbow
+                                              .copyWith(
+                                                  begin: Alignment.topLeft,
+                                                  end: Alignment.bottomRight,
+                                                  colors: List.from(Foils
+                                                      .linearRainbow.colors)),
+                                          opacity: 0.6,
+                                          scalar: Scalar.identity,
+                                          speed: const Duration(seconds: 200),
+                                          duration:
+                                              const Duration(seconds: 100),
+                                          child: const Text(
+                                            "Nieman's Website",
+                                            textScaleFactor: 4.5,
+                                            style: TextStyle(
+                                              fontFamily: 'FjallaOne',
+                                              fontWeight: FontWeight.w500,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    const Introduction(
+                                        word:
+                                            'Senior Software Engineer & Architect | XR & Multiverse Specialist | Cross-Platform Development Leader',
+                                        textScaleFactor: 1.5),
+                                  ],
                                 ),
                               ),
                             ),
-                          ),
+                            Expanded(
+                              child: Center(
+                                child: CarouselSlider(
+                                  options: CarouselOptions(
+                                    autoPlay: true,
+                                    aspectRatio: 2.0,
+                                    enlargeCenterPage: true,
+                                  ),
+                                  items: [
+                                    [
+                                      'assets/gallery/1.png',
+                                      'Nieman and Minnie'
+                                    ],
+                                    ['assets/gallery/3.jpg', 'On the bike :)'],
+                                    ['assets/gallery/4.jpg', 'The Weekends'],
+                                    [
+                                      'assets/gallery/5.jpg',
+                                      'On the Tail of the Dragon'
+                                    ],
+                                    [
+                                      'assets/gallery/6.jpg',
+                                      'With my friend Ronie'
+                                    ],
+                                  ].map((i) {
+                                    return Builder(
+                                      builder: (BuildContext context) {
+                                        return Stack(
+                                          children: [
+                                            Container(
+                                                width: MediaQuery.of(context)
+                                                    .size
+                                                    .width,
+                                                margin:
+                                                    const EdgeInsets.symmetric(
+                                                        horizontal: 5.0),
+                                                decoration: BoxDecoration(
+                                                  color: Colors.amber,
+                                                  borderRadius:
+                                                      BorderRadius.circular(10),
+                                                ),
+                                                child: Image.asset(i[0],
+                                                    fit: BoxFit.cover)),
+                                            Align(
+                                              alignment: const Alignment(
+                                                  0.0, 0.9), // Bottom center
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(10.0),
+                                                child: Text(
+                                                  i[1],
+                                                  style: const TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 12,
+                                                    fontWeight: FontWeight.w100,
+                                                    backgroundColor:
+                                                        Colors.black54,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        );
+                                      },
+                                    );
+                                  }).toList(),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                        const Introduction(
-                            word:
-                                'Senior Software Engineer & Architect | XR & Multiverse Specialist | Cross-Platform Development Leader',
-                            textScaleFactor: 1.5),
                         const SizedBox(
                           height: 15.0,
                         ),

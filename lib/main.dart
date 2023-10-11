@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_list_view/flutter_list_view.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:niemanswebsite/underconstruction.dart';
 import 'package:sa3_liquid/liquid/plasma/plasma.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -12,6 +13,7 @@ import 'custom_theme.dart';
 final FirebaseAnalytics analytics = FirebaseAnalytics.instance;
 
 void main() async {
+  setUrlStrategy(PathUrlStrategy());
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
