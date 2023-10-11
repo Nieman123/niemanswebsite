@@ -39,7 +39,7 @@ class Multiverse extends StatelessWidget {
                   
 This shift was complemented by the introduction of a user-centric world-building interface, allowing users to craft distinctive rooms or scenes with ease. Furthermore, the collaboration with a dedicated Unity team led to the birth of a harmonized frontend builder and player applications. 
                   
-The backended was built with a GraphQL API and database system put in place for efficient asset management and world submissions.""",
+The backend was built with a GraphQL API and a React based front end was implemented for efficient asset management and world submissions.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,
@@ -81,7 +81,7 @@ The backended was built with a GraphQL API and database system put in place for 
                   
 This shift was complemented by the introduction of a user-centric world-building interface, allowing users to craft distinctive rooms or scenes with ease. Furthermore, the collaboration with a dedicated Unity team led to the birth of a harmonized frontend builder and player applications. 
                   
-The backended was built with a GraphQL API and database system put in place for efficient asset management and world submissions.""",
+The backend was built with a GraphQL API and a React based front end was implemented for efficient asset management and world submissions.""",
                   style: TextStyle(
                       fontFamily: 'SourceCodePro',
                       letterSpacing: 2.5,

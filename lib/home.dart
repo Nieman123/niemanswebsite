@@ -8,7 +8,9 @@ import 'package:niemanswebsite/installer.dart';
 import 'package:niemanswebsite/introduction.dart';
 import 'package:niemanswebsite/multiverse.dart';
 import 'package:niemanswebsite/resumedownload.dart';
+import 'package:niemanswebsite/skills.dart';
 import 'package:niemanswebsite/teams.dart';
+import 'package:niemanswebsite/work_process.dart';
 
 import 'about.dart';
 import 'gd_project.dart';
@@ -104,6 +106,7 @@ class _HomePageState extends State<HomePage> {
                             autoPlay: true,
                             aspectRatio: 2.0,
                             enlargeCenterPage: true,
+                            enlargeStrategy: CenterPageEnlargeStrategy.height,
                           ),
                           items: [
                             ['assets/gallery/1.png', 'Nieman and Minnie'],
@@ -193,6 +196,14 @@ class _HomePageState extends State<HomePage> {
                       Installer(fontSize: 15, isMobile: true),
                       Mentor(fontSize: 15, isMobile: true),
                       Teams(fontSize: 15, isMobile: true),
+                      const SkillsSection(),
+                      const SizedBox(
+                        height: 10.0,
+                      ),
+                      const WorkProcess(
+                          word:
+                              """My preferred methodology draws inspiration from the SCRUM framework, a collaborative approach that promotes team synergy, iterative progress, and constant feedback. By breaking down complex projects into manageable tasks tailored to individual developers, I ensure that each team member has clarity on their responsibilities and the bigger picture. To complement this, I employ Gantt charts as a visual tool to track progress, set milestones, and ensure timely project completion. This combination of methods not only fosters efficiency but also ensures that the project remains adaptable to changing requirements, guaranteeing solutions that are both robust and flexible.""",
+                          textScaleFactor: 1.0),
                       const ContactMe()
                     ],
                   ),
@@ -266,10 +277,11 @@ class _HomePageState extends State<HomePage> {
                               child: Center(
                                 child: CarouselSlider(
                                   options: CarouselOptions(
-                                    autoPlay: true,
-                                    aspectRatio: 2.0,
-                                    enlargeCenterPage: true,
-                                  ),
+                                      autoPlay: true,
+                                      aspectRatio: 2.0,
+                                      enlargeCenterPage: true,
+                                      enlargeStrategy:
+                                          CenterPageEnlargeStrategy.height),
                                   items: [
                                     [
                                       'assets/gallery/1.png',
@@ -369,7 +381,7 @@ class _HomePageState extends State<HomePage> {
                           direction: Axis.horizontal,
                           children: [
                             Expanded(
-                              child: GDProject(
+                              child: Multiverse(
                                 fontSize: 15,
                                 isMobile: false,
                               ),
@@ -386,7 +398,7 @@ class _HomePageState extends State<HomePage> {
                           direction: Axis.horizontal,
                           children: [
                             Expanded(
-                              child: Multiverse(
+                              child: GDProject(
                                 fontSize: 15,
                                 isMobile: false,
                               ),
@@ -415,6 +427,14 @@ class _HomePageState extends State<HomePage> {
                             )),
                           ],
                         ),
+                        const SkillsSection(),
+                        const SizedBox(
+                          height: 10.0,
+                        ),
+                        const WorkProcess(
+                            word:
+                                """My preferred methodology draws inspiration from the SCRUM framework, a collaborative approach that promotes team synergy, iterative progress, and constant feedback. By breaking down complex projects into manageable tasks tailored to individual developers, I ensure that each team member has clarity on their responsibilities and the bigger picture. To complement this, I employ Gantt charts as a visual tool to track progress, set milestones, and ensure timely project completion. This combination of methods not only fosters efficiency but also ensures that the project remains adaptable to changing requirements, guaranteeing solutions that are both robust and flexible.""",
+                            textScaleFactor: 1.0),
                         const ContactMe()
                       ],
                     ),
