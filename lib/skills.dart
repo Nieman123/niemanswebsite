@@ -33,7 +33,7 @@ class SkillsSection extends StatelessWidget {
                       FontAwesomeIcons.mobile, "Mobile Development", isWide),
                   _SkillItem(FontAwesomeIcons.cloud, "CI/CD", isWide),
                   _SkillItem(FontAwesomeIcons.code, "C++", isWide),
-                  _SkillItem(FontAwesomeIcons.gitAlt, "VCS", isWide),
+                  _SkillItem(FontAwesomeIcons.gitAlt, "Git", isWide),
                   _SkillItem(FontAwesomeIcons.amazon, "AWS", isWide),
                   _SkillItem(FontAwesomeIcons.code, "Flutter", isWide),
                   _SkillItem(
