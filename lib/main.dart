@@ -52,7 +52,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   List<Widget> widgetList = [
-    const UnderConstruction(),
+    //const UnderConstruction(),
     const HomePage(),
   ];
 

@@ -20,7 +20,7 @@ class _ResumeDownloadButtonState extends State<ResumeDownloadButton> {
     final url = html.Url.createObjectUrlFromBlob(blob);
     final anchor = html.AnchorElement(href: url)
       ..target = 'blank'
-      ..download = 'Jonathan-Nieman-Resume-10-2-2023.pdf'
+      ..download = 'Jonathan-Nieman-Resume-11-28-2024.pdf'
       ..click();
     html.Url.revokeObjectUrl(url);
   }
