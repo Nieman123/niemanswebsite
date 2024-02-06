@@ -27,6 +27,8 @@ class SkillsSection extends StatelessWidget {
                 spacing: 16.0,
                 runSpacing: 16.0,
                 children: [
+                  _SkillItem(FontAwesomeIcons.gamepad, "Unreal Engine + Unity",
+                      isWide),
                   _SkillItem(FontAwesomeIcons.database, "Databases", isWide),
                   _SkillItem(FontAwesomeIcons.server, "Backend", isWide),
                   _SkillItem(

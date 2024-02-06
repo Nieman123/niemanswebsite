@@ -77,6 +77,8 @@ Additionally, a notable achievement was the successful porting of the UE4 multiv
                       fontSize: fontSize * 1.5),
                 ),
                 const SizedBox(height: 10.0),
+                Image.asset('assets/flutter+dart.png'), // Add spacing
+                const SizedBox(height: 10.0),
                 Text(
                   """
 Pioneered the development of a versatile installer utilizing Dart and Flutter, offering hassle-free installation and updates for Mac and Windows desktop multiverse experiences. 
