@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.only(top: height * 0.07),
                         child: const Introduction(
                             word:
-                                'Senior Software Engineer & Architect | XR & Multiverse Specialist | Cross-Platform Development Leader',
+                                'Senior Software Engineer | XR Engineer | Cross-Platform Development Leader',
                             textScaleFactor: 1.5),
                       ),
                       const SizedBox(
@@ -267,7 +267,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                     const Introduction(
                                         word:
-                                            'Senior Software Engineer & Architect | XR & Multiverse Specialist | Cross-Platform Development Leader',
+                                            'Senior Software Engineer | XR Engineer | Cross-Platform Development Leader',
                                         textScaleFactor: 1.5),
                                   ],
                                 ),
